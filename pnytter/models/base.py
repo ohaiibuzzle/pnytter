@@ -9,7 +9,7 @@ PosInt = pydantic.Field(..., ge=0)
 
 class BasePnytterModel(pydantic.BaseModel):
     class Config:
-        anystr_strip_whitespace = True
+        str_strip_whitespace = True
 
 
 class BasePnytterStats(BasePnytterModel):
