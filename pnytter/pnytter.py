@@ -98,7 +98,7 @@ class Pnytter(pydantic.BaseModel):
         """
         self._validate_instances_available()
         nitter_instance = nitter_instance if nitter_instance else self._get_random_nitter_instance()
-        url = url_path_join(nitter_instance, endpoint)
+        url = url_path_join(str(nitter_instance), str(endpoint))
 
         return self._raw_request(
             method=method,
