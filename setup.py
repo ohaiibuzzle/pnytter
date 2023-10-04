@@ -2,8 +2,8 @@ import json
 from setuptools import setup, find_packages
 
 
-VERSION = "$VERSION$"
-REQUIREMENTS_JSON = """$REQUIREMENTS$"""
+VERSION = "0.2.2"
+REQUIREMENTS_JSON = """["pydantic>=1.9.1", "requests>=2.28.1", "beautifulsoup4>=4.11.1", "urljoin>=1.0.0"]"""
 
 
 with open("README.md", "r") as f:
